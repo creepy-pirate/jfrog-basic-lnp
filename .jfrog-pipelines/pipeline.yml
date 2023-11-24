@@ -1,6 +1,6 @@
 resources:
   - name: insight_json_lint_java_module_build_info
-    type: GitRepo
+    type: BuildInfo
     configuration:
       gitProvider: deepak_git
       path: creepy-pirate/pipelines-hello-world
@@ -37,6 +37,8 @@ pipelines:
         execution:
           onExecute:
             - echo $resource_new_2_path
+            - write_output "insight_json_lint_java_module_build_info" "buildName="
+            - write_output "insight_json_lint_java_module_build_info" "buildNumber="
       - name: trigger_2
         type: Bash
         configuration:
