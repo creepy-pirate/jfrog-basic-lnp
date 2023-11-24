@@ -1,12 +1,12 @@
-# resources:
-#   - name: resource_new_2
-#     type: GitRepo
-#     configuration:
-#       gitProvider: emptyRepotest
-#       path:  seekhJaunga/emptyrepo
-#       buildOn:
-#          releaseCreate: true
-#          commit: false
+resources:
+  - name: insight_json_lint_java_module_build_info
+    type: GitRepo
+    configuration:
+      gitProvider: deepak_git
+      path: creepy-pirate/pipelines-hello-world
+      buildOn:
+         releaseCreate: true
+         commit: false
 
 pipelines:
   - name: single_test
