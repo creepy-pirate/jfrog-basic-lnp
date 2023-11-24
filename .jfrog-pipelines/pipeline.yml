@@ -3,8 +3,8 @@ resources:
     type: BuildInfo
     configuration:
       sourceArtifactory: entArt
-      buildName: 
-      buildNumber: 
+      buildName: hell
+      buildNumber: 2
 
 pipelines:
   - name: single_test
