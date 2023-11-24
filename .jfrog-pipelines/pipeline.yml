@@ -2,11 +2,7 @@ resources:
   - name: insight_json_lint_java_module_build_info
     type: BuildInfo
     configuration:
-      gitProvider: deepak_git
-      path: creepy-pirate/pipelines-hello-world
-      buildOn:
-         releaseCreate: true
-         commit: false
+      sourceArtifactory: entArt
 
 pipelines:
   - name: single_test
