@@ -9,6 +9,7 @@ resources:
 pipelines:
   - name: single_test
     configuration:
+      jfrogCliVersion: 2
       environmentVariables:
         readOnly:
           env2: "test_p2"
