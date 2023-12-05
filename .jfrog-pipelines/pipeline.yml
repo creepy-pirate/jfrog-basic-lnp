@@ -41,8 +41,9 @@ pipelines:
           onExecute:
             - echo $resource_new_2_path
             - touch test.txt
-            - jf rt u test.txt generic-local/test.txt
+            - jf rt u test.txt generic-local/test.txt --build-name bacdstats_docker --build-number 2023.11.22@20231123-132058
             - jf rt bce bacdstats_docker 2023.11.22@20231123-132058
+            - jf rt bag bacdstats_docker 2023.11.22@20231123-132058
             - jf rt bp bacdstats_docker 2023.11.22@20231123-132058
             - write_output "insight_json_lint_java_module_build_info" "buildName=bacdstats_docker"
             - write_output "insight_json_lint_java_module_build_info" "buildNumber=2023.11.22@20231123-132058"
