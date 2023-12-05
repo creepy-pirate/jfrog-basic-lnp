@@ -35,6 +35,8 @@ pipelines:
             - name: pre_step
           integrations:
             - name: rt
+          outputResources:
+              - name: insight_json_lint_java_module_build_info
         execution:
           onExecute:
             - echo $resource_new_2_path
